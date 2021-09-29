@@ -7,8 +7,10 @@ from .models import Task
 class TaskList(ListView):
     model = Task
     context_object_name = 'Tasks'
+    template_name = 'base/list.html'
 
 
 class DetailList(DetailView):
     model = Task
     context_object_name = 'TasksDetail'
+    template_name = 'base/task.html'
