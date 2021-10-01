@@ -6,9 +6,11 @@
 </head>
 <body>
     <h1>My ToDo List</h1>
+    <a href="{% url 'create' %}">Create Task</a>
     <table>
         <tr>
             <th>Items</th>
+            <th></th>
         </tr>
         {% for task in Tasks %}
             <tr>
